@@ -49,4 +49,4 @@ while True:
           break
     
     else:
-        print("Invalid Input")
+        print("Invalid Input, try again")
