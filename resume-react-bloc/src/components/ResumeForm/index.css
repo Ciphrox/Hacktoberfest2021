@@ -1,0 +1,7 @@
+.plusIcon {
+  font-size: 2rem;
+  color: gray;
+}
+.plusIcon:hover{
+    color: var(--dark);
+}
