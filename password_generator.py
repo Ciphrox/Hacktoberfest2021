@@ -1,6 +1,8 @@
 import random
-digits = int(input("how many digit password: "))
-def pass_gen(digits):
-	chars = "abcdefghijklmnopqrstuvwxyz1234567890"
-	return "".join(random.sample(chars,digits))
-print(pass_gen(digits))
+import strings
+
+digits = int(input("how many digits password: "))
+def pas_gen(digits):
+	pas = ''.join(random.choices(string.ascii_letters + string.punctuation + string.digits, k=digits))
+	return pas
+print(pas_gen(digits))
