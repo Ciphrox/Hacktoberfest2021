@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://hacktoberfest.digitalocean.com/">
-    <h2 align="center">The <b>HACKTOBERFEST 2021</b></h2>
+    <h2 align="center">The <b>HACKTOBER FEST 2021</b></h2>
   </a>
 </p>
 <p align="center">Open source is changing the world – one contribution at a time.</p>
