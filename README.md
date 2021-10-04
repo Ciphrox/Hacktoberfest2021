@@ -9,11 +9,11 @@
 
 <div align="center">
 
-![Issues](https://img.shields.io/github/issues/aryasoni98/Hacktoberfest2021)
-![Pull Requests](https://img.shields.io/github/issues-pr/aryasoni98/Hacktoberfest2021)
-![Forks](https://img.shields.io/github/forks/aryasoni98/Hacktoberfest2021)
-![Stars](https://img.shields.io/github/stars/aryasoni98/Hacktoberfest2021)
-![License](https://img.shields.io/github/license/aryasoni98/Hacktoberfest2021)
+![Issues](https://img.shields.io/github/issues/dark-coder-cat/Hactoberfest2021)
+![Pull Requests](https://img.shields.io/github/issues-pr/dark-coder-cat/Hactoberfest2021)
+![Forks](https://img.shields.io/github/forks/dark-coder-cat/Hactoberfest2021)
+![Stars](https://img.shields.io/github/stars/dark-coder-cat/Hactoberfest2021)
+![License](https://img.shields.io/github/license/dark-coder-cat/Hactoberfest2021)
 
 </div>
 
