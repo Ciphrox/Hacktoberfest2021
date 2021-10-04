@@ -1,4 +1,4 @@
-![image](./images/logohack.jpg)
+![image](./logohack.jpg)
 
 <p align="center">
   <a href="https://hacktoberfest.digitalocean.com/">
