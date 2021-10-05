@@ -30,17 +30,22 @@ int find_first_occurance(vector<int> &A, int x){
     return (A[l] == x) ? l : -1;
 }
 
+int find_occurance(vector<int> &v, int x){
+    int first = find_first_occurance(v,x);
+    int last = find_last_occurance(v, x);
+    return first == -1 ? 0 : last-first+1;
+}
+
 int main(){
     vector<int> v{1,1,1,2,2,2,3,3,4,4,4,4,4,5,5,5,10,10};
     
-    int first, last;
-    if(((last = find_last_occurance(v, 2))-(first = find_first_occurance(v,2))) != 0)
-        cout << "2 is occuring " << last-first+1 << " times in vector\n";
+    if(find_occurance(v,2) != 0)
+        cout << "2 is occuring " << find_occurance(v,2) << " times in vector\n";
     else
         cout << "2 is not present in vector v.\n";
     
-    if(((last = find_last_occurance(v, 30))-(first = find_first_occurance(v,30))) != 0)
-        cout << "30 is occuring " << last-first+1 << " times in vector\n";
+    if(find_occurance(v,30) != 0)
+        cout << "30 is occuring " << find_occurance(v,30) << " times in vector\n";
     else
         cout << "30 is not present in vector v.\n";
 }
