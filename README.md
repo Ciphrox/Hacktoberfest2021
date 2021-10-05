@@ -62,4 +62,4 @@ git push origin branch-name
 * Raise a valid Issue, and wait until the maintainer assigns it
 
 
-* __Star this repository__ if you had fun contributing!
+* Star this repository if you had fun contributing!
