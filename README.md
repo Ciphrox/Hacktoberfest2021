@@ -29,6 +29,37 @@ Hacktoberfest is a month long event where people are awarded for contributing to
 2. Make any changes in your forked repo
 3. On this repo, click `Pull Requests` and raise a `Pull Request` selecting your fork on the right drop down
 
-Questions can be asked by raising an `Issue`.
+## Getting started
+* Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
+* Clone your fork down to your local machine.
+
+```markdown
+git clone https://github.com/dark-coder-cat/Hactoberfest2021
+```
+
+* Create a branch
+
+```markdown
+git checkout -b your-branch-name
+```
+
+* Make your changes.
+* Commit and push your code.
+
+```markdown
+git add .
+git commit -m 'Commit message'
+git push origin branch-name
+
+* Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
+* Wait for your PR review and merge approval...
+* __Star this repository__ if you had fun contributing!
+
+## How to make your issue
+
+* Go to the issue section
+* Create a new Issue
+* Raise a valid Issue, and wait until the maintainer assigns it
 
 
+* __Star this repository__ if you had fun contributing!
