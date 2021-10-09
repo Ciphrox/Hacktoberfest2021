@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Temperature Converter</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="temperature.css">
+		</head>
+		<body>
+			<div class="outer-div">
+				<h1>Temperature Converter</h1>
+				<div class="temp-box">
+					<div class="input-box">
+						<p>Enter your Temperature and Select Scale</p>
+						<div class="each-line">
+							<input type="number" id="input" class="value" oninput="calculate_temp()" placeholder="0">
+							<select id="from" oninput="calculate_temp()">
+								<option value="C" selected>Celcius (C)</option>
+								<option value="F">Fahrenheit (F)</option>
+								<option value="K">Kelvin (K)</option>
+							</select>
+						</div>
+					</div>
+					<div class="output-box">
+						<h3>Result</h3>
+						<div class="each-line">
+							<p id="result" class="value">32</p>
+							<select id="to" oninput="calculate_temp()">
+								<option value="C">Celcius (C)</option>
+								<option value="F" selected>Fahrenheit (F)</option>
+								<option value="K">Kelvin (K)</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="temperature.js"></script>
+	</body>
+</html>
