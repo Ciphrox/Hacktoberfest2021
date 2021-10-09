@@ -1,0 +1,6 @@
+### Java ###
+# Compiled class file
+*.class
+
+# Binaries for programs and plugins
+*.exe
