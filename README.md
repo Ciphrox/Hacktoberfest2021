@@ -60,6 +60,10 @@ git push origin branch-name
 * Go to the issue section
 * Create a new Issue
 * Raise a valid Issue, and wait until the maintainer assigns it
+* When doing PR also add this to PR
+```
+closes #your_issue_no
+```
 
 ## Thanks to the Contributors
 
