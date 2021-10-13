@@ -13,35 +13,15 @@ int main()
         } a++;
         for(h=1;h<=a;h++)
         {
-           // x++;
-           // for(u=1;u<=i;u++)
-            // {
-                 printf("%c",h);
-                 //printf("%d",u);
-            //}
+                 printf("%c",h);    
         }
         for(h=s-1;h>=1;h--)
         { 
             printf("%c",h);
-        }
-    
-        //for(u=1,u<=h,u++ ) 
-       // { 
-           // printf("%d",u);
-       // }
+        } 
     printf("\n");
         
-    } 
-    //for(u=1;u<=i;u++)
-   // {
-        //for(x=1;x<=u;x++)
-       // {
-           // printf("%d",x);
-
-      //  }
-      //  printf("\n");
-    
-            
+    }         
     return 0;
     
 }
