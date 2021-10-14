@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="bmi-calculator-flutter/build/app/generated/source/buildConfig/debug/|bmi-calculator-flutter/android/app/src/main/java/|Patterns/|bmi-calculator-flutter/build/app/generated/not_namespaced_r_class_sources/release/r/|bmi-calculator-flutter/build/app/generated/not_namespaced_r_class_sources/debug/r/|bmi-calculator-flutter/build/app/generated/source/buildConfig/release/" kind="src" path=""/>
+	<classpathentry kind="src" path="bmi-calculator-flutter/android/app/src/main/java"/>
+	<classpathentry kind="src" path="bmi-calculator-flutter/build/app/generated/not_namespaced_r_class_sources/debug/r"/>
+	<classpathentry kind="src" path="bmi-calculator-flutter/build/app/generated/not_namespaced_r_class_sources/release/r"/>
+	<classpathentry kind="src" path="bmi-calculator-flutter/build/app/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="bmi-calculator-flutter/build/app/generated/source/buildConfig/release"/>
+	<classpathentry kind="src" path="Patterns"/>
+	<classpathentry kind="output" path="bmi-calculator-flutter/build/app/intermediates/javac/debug/classes"/>
+</classpath>
