@@ -1,6 +1,9 @@
 ![image](./logohack.jpg)
 
+
+
 <p align="center">
+  
   <a href="https://hacktoberfest.digitalocean.com/">
     <h2 align="center">The <b>HACKTOBER FEST 2021</b></h2>
   </a>
@@ -8,6 +11,8 @@
 <p align="center">Open source is changing the world – one contribution at a time.</p>
 
 <div align="center">
+  
+  
 
 ![Issues](https://img.shields.io/github/issues/dark-coder-cat/Hacktoberfest2021)
 ![Pull Requests](https://img.shields.io/github/issues-pr/dark-coder-cat/Hacktoberfest2021)
@@ -61,11 +66,9 @@ git push origin branch-name
 * Create a new Issue
 * Raise a valid Issue, and wait until the maintainer assigns it
 * When doing PR also add this to PR
-```
-closes #your_issue_no
-```
 
-## Thanks to the Contributors
+
+## Thanks to the Contribution
 
 <a href="https://github.com/dark-coder-cat/Hacktoberfest2021/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=dark-coder-cat/Hacktoberfest2021" />
