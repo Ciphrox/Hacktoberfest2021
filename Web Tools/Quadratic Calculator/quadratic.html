@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Quadratic Equation Solver | Utility Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="quadratic.css" />
+    </head>
+    <body>
+        <div class="outer-div">
+            <h1>Quadratic Equation Solver</h1>  
+            <div class="quadraticbox">
+                <p class="entertext">Enter your quadratic equation</p>
+                <div class="quadeqbox">
+                    <input type="number" autocomplete="off" id="a">
+                    <span class="vboxvar">x<sup>2</sup>+</span>
+                    <input type="number" autocomplete="off" id="b">
+                    <span class="vboxvar">x+</span>
+                    <input type="number" autocomplete="off" id="c">
+                    <span class="vboxvar">= 0</span>
+                </div>
+                <button class="calcbtn" onclick="quadcalc()">Calculate &nbsp;<i class="fa fa-calculator" aria-hidden="true"></i></button>
+                <button class="calcbtn delbtn" onclick="clearall()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                <div class="dbox">
+                    <p id="dtext">Fill your Equation</p>
+                </div>
+                <div class="resultbox">
+                    <div class="xcont">
+                        <p class="xsmallbox">x= <span id="x1"></span></p>
+                    </div>
+                    <div class="xcont">
+                        <p class="xsmallbox">x= <span id="x2"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="quadratic.js"></script>
+      </body>
+    </html>

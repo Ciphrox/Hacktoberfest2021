@@ -1,0 +1,64 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(242, 245, 237);
+    font-family: 'Prompt', sans-serif;
+}
+
+.outer-div {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(255 255 255);
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    color: #2196f3;
+}
+h3{
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+    color: #2196f3;
+    font-size: 1.3rem;
+}
+.temp-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+}
+.temp-box .input-box p{
+    margin: 0 0 0.5rem 0;
+    color: #ababab;
+}
+.each-line{
+    display: flex;
+    gap: 1rem;
+}
+.each-line .value{
+    flex: 1;
+    padding: 0.3rem;
+    outline: 0;
+    background: #f2f5ed;
+    border: 1px solid #b1b1b1;
+}
+.each-line p{
+    margin: 0;
+}
