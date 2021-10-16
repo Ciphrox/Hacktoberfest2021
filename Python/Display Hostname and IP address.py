@@ -1,5 +1,3 @@
-
-
 # Importing socket library
 import socket
 
