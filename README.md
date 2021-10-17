@@ -9,11 +9,11 @@
 
 <div align="center">
 
-![Issues](https://img.shields.io/github/issues/dark-coder-cat/Hactoberfest2021)
-![Pull Requests](https://img.shields.io/github/issues-pr/dark-coder-cat/Hactoberfest2021)
-![Forks](https://img.shields.io/github/forks/dark-coder-cat/Hactoberfest2021)
-![Stars](https://img.shields.io/github/stars/dark-coder-cat/Hactoberfest2021)
-![License](https://img.shields.io/github/license/dark-coder-cat/Hactoberfest2021)
+![Issues](https://img.shields.io/github/issues/dark-coder-cat/Hacktoberfest2021)
+![Pull Requests](https://img.shields.io/github/issues-pr/dark-coder-cat/Hacktoberfest2021)
+![Forks](https://img.shields.io/github/forks/dark-coder-cat/Hacktoberfest2021)
+![Stars](https://img.shields.io/github/stars/dark-coder-cat/Hacktoberfest2021)
+![License](https://img.shields.io/github/license/dark-coder-cat/Hacktoberfest2021)
 
 </div>
 
@@ -34,7 +34,7 @@ Hacktoberfest is a month long event where people are awarded for contributing to
 * Clone your fork down to your local machine.
 
 ```markdown
-git clone https://github.com/dark-coder-cat/Hactoberfest2021
+git clone https://github.com/dark-coder-cat/Hacktoberfest2021
 ```
 
 * Create a branch
@@ -60,6 +60,15 @@ git push origin branch-name
 * Go to the issue section
 * Create a new Issue
 * Raise a valid Issue, and wait until the maintainer assigns it
+* When doing PR also add this to PR
+```
+closes #your_issue_no
+```
 
+## Thanks to the Contributors
 
-* Star this repository if you had fun contributing!
+<a href="https://github.com/dark-coder-cat/Hacktoberfest2021/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dark-coder-cat/Hacktoberfest2021" />
+</a>
+
+## Star this repository if you had fun contributing!

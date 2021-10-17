@@ -1,0 +1,118 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+*:focus {
+    outline: none;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(242, 245, 237);
+    font-family: 'Prompt', sans-serif;
+}
+.outer-div {
+    max-width: 28rem;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgb(255 255 255);
+    padding: 1rem;
+}
+h1 {
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    color: #2196f3;
+    margin-bottom: 1rem;
+}
+.quadraticbox
+{
+    text-align: center;
+}
+.quadeqbox
+{
+  display: block;
+}
+.dbox
+{
+    background: #7a7979;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.dbox p
+{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+}
+.resultbox
+{
+    margin-top: 1.2rem;
+    background: #ffbbed;
+    color: white;
+    padding: 0.7rem 1rem;
+        display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.xsmallbox
+{
+   font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+.xcont
+{
+    margin: 0 0.3rem;
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem 0.7rem;
+    background: crimson;
+    border-radius: 0.4rem;
+}
+.calcbtn
+{
+    margin: 1.4rem 0 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    color: white;
+    background: #2196f3;
+    border: none;
+}
+.delbtn
+{
+  float: right;
+}
+input
+{
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #abaaaa;
+    width: 4rem;
+    text-align: center;
+}
+.eachbox
+{
+    margin-top: 1rem;
+}
+.entertext
+{
+    margin-bottom: 1rem;
+    color: grey;
+}
+.vboxvar
+{
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    color: #999595;
+    font-weight: 700;
+}
