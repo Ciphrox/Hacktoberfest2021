@@ -1,20 +1,28 @@
 # bubble sorting an array
 #//---create a random list---//
+# Code is more optimal from previous version
+# Added comment from understanding the meaning 
 
-import random as rand
-a=[]
-for _ in range(10):
- x=rand.randint(0,100)
- a.append(x)
-print ("random : ",a)
+def bubbleSort(arr):
+	n = len(arr)
 
-#//---logic to swap pair of no.---//
+	# Traverse through all array elements
+	for i in range(n):
 
-for j in range (len(a)):
-    temp=a.copy()
-    for i in range(len(a)-1):
-        if a[i]>a[i+1]:
-            a[i],a[i+1]=a[i+1], a[i]
-    if temp==a:
-        break
-print("sorted : ",a)
+		# Last i elements are already in place
+		for j in range(0, n-i-1):
+
+			# traverse the array from 0 to n-i-1
+			# Swap if the element found is greater
+			# than the next element
+			if arr[j] > arr[j+1] :
+				arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# Driver code to test above
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+bubbleSort(arr)
+
+print ("Sorted array is:")
+for i in range(len(arr)):
+	print ("%d" %arr[i]),
