@@ -1,27 +1,31 @@
-// Java program to demonstrate working of Arrays.
-// binarySearch() in a sorted array.
 import java.util.Arrays;
+/**
+ * Write a description of class BinarySearch here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class BinarySearch
+{
+   public static void main(String[] args) {
 
-public class GFG {
-    public static void main(String[] args)
-    {
-        int arr[] = { 10, 20, 15, 22, 35 };
-        Arrays.sort(arr);
+   // initializing unsorted byte array
+   byte byteArr[] = {10,20,15,4,13,22,35};
 
-        int key = 22;
-        int res = Arrays.binarySearch(arr, key);
-        if (res >= 0)
-            System.out.println(key + " found at index = " 
-                                                  + res);
-        else
-            System.out.println(key + " Not found");
+   // sorting array
+   Arrays.sort(byteArr);
 
-        key = 40;
-        res = Arrays.binarySearch(arr, key);
-        if (res >= 0)
-            System.out.println(key + " found at index = " 
-                                                  + res);
-        else
-            System.out.println(key + " Not found");
-    }
+   // let us print all the elements available in list
+   System.out.println("The sorted byte array is:");
+   for (byte number : byteArr) {
+   System.out.println("Number = " + number);
+   }
+
+   // entering the value to be searched
+   byte searchVal = 35;
+
+   int retVal = Arrays.binarySearch(byteArr,searchVal);
+
+   System.out.println("The index of element 35 is : " + retVal);
+   }
 }
