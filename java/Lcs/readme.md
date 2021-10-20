@@ -6,7 +6,6 @@ A subsequence of a string is a new string generated from the original string wit
 
 ![Screenshot (745)](https://user-images.githubusercontent.com/54171759/138126586-2d68a813-c491-4eb6-8fd1-8d1c160fc335.png)
 
-
 <hr>
 
 ## Method used 
