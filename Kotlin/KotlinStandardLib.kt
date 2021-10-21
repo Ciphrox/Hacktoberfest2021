@@ -1,6 +1,6 @@
 package com.example
 
-//Code snippet of new Kotlin features
+//Samples of some useful yet unpopular Kotlin functions
 fun main() {
 
     //Take() 
