@@ -1,0 +1,1 @@
+{"name":"Local: Lcs","url":"c:\\Users\\RKA\\Desktop\\Lcs\\Lcs.java","tests":[{"id":1634743178482,"input":"abcde\nace","output":"3"},{"id":1634743212573,"input":"abc\ndef","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\RKA\\Desktop\\Lcs\\Lcs.java","group":"local","local":true}
