@@ -3,7 +3,7 @@ package com.example
 //Code snippet of new Kotlin features
 fun main() {
 
-    //Take()
+    //Take() 
     //Another useful function from Kotlin Kotlin standard library. This function will return/take n number of elements from a collcetion
     val numbersA =  listOf("one", "two", "three", "four")
 
