@@ -21,7 +21,7 @@
 # NOTE
 
 **Hacktoberfest has excluded our repository. So most of your PRs wouldn't get counted.
-And i feel so sorry for that. This repo will be archieved.**
+And i feel so sorry for that. This repo will be archieved so No PRs are to be accepted**
 
 ---
 
