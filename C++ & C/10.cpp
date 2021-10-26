@@ -1,15 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-const double pi=3.14;
-const char newline='\n';
-int main(){
- double r=5.0;
- double circle;
- circle=2*pi*r;
- cout<<circle;
- cout<<newline;
 
+int main()
+{
+    int firstNumber, secondNumber, sumOfTwoNumbers;
+    
+    cout << "Enter two integers: ";
+    cin >> firstNumber >> secondNumber;
 
+    // sum of two numbers in stored in variable sumOfTwoNumbers
+    sumOfTwoNumbers = firstNumber + secondNumber;
 
+    // Prints sum 
+    cout << firstNumber << " + " <<  secondNumber << " = " << sumOfTwoNumbers;     
 
+    return 0;
 }
+// For Hacktoberfest2021
