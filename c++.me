@@ -1,0 +1,157 @@
+  #C++ Program to Find Sum of Matrix Row and Column
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i, j, rows, columns, sum;
+	
+	cout << "\nPlease Enter the Matrix rows and Columns =  ";
+	cin >> i >> j;
+	
+	int sumRCArray[i][j];
+	
+	cout << "\nPlease Enter the Matrix Items =  ";
+	for(rows = 0; rows < i; rows++)	{
+		for(columns = 0; columns < i; columns++) {
+			cin >> sumRCArray[rows][columns];
+		}		
+	}
+	
+	for(rows = 0; rows < i; rows++)
+  	{
+  		sum = 0;
+  		for(columns = 0; columns < j; columns++)
+  		{
+  			sum = sum + sumRCArray[rows][columns];
+		}
+   		cout << "\nThe Sum of Items in " << rows + 1<< " Row of a Matrix = " << sum ;
+  	}
+
+ 	for(rows = 0; rows < i; rows++)
+  	{
+  		sum = 0;
+  		for(columns = 0; columns < j; columns++)
+  		{
+  			sum = sum + sumRCArray[columns][rows];
+		}
+   		cout << "\nThe Sum of Items in Column of a Matrix = " << sum ;
+  	}  	
+
+ 	return 0;
+}
+C++ Program to Find Sum of Matrix Row and Column 1
+C++ Program to Find Sum of Matrix Row and Column Example 2
+Instead of using two different nested for loop to calculate the sum of matrix rows and columns, we used only one loop. Within the nested for loop, we are calculating the sum of matrix rows and columns.
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i, j, rows, columns, rowsum, columnsum;
+	
+	cout << "\nPlease Enter the Matrix rows and Columns =  ";
+	cin >> i >> j;
+	
+	int sumRCArray[i][j];
+	
+	cout << "\nPlease Enter the Matrix Items =  ";
+	for(rows = 0; rows < i; rows++)	{
+		for(columns = 0; columns < i; columns++) {
+			cin >> sumRCArray[rows][columns];
+		}		
+	}
+	
+	for(rows = 0; rows < i; rows++)
+  	{
+  		rowsum = columnsum = 0;
+  		for(columns = 0; columns < j; columns++)
+  		{
+  			rowsum = rowsum + sumRCArray[rows][columns];
+  			columnsum = columnsum + sumRCArray[columns][rows];
+		}
+   		cout << "\n\nThe Sum of Items in " << rows + 1<< " Row of a Matrix = " << rowsum ;
+   		cout << "\nThe Sum of Items in Column of a Matrix = " << columnsum ;
+  	}
+
+ 	return 0;
+}
+Please Enter the Matrix rows and Columns =  3 3
+
+Please Enter the Matrix Items =  
+11 22 33
+44 55 66
+77 88 99
+
+
+The Sum of Items in 1 Row of a Matrix = 66
+The Sum of Items in Column of a Matrix = 132
+
+The Sum of Items in 2 Row of a Matrix = 165
+The Sum of Items in Column of a Matrix = 165
+
+The Sum of Items in 3 Row of a Matrix = 264
+The Sum of Items in Column of a Matrix = 198
+In this C++ Program to calculate the sum of Matrix Row and Column, we separated the matrix row sum and column sum logic into two different functions.
+
+#include<iostream>
+using namespace std;
+
+void addMatrixRows(int sumRCArray[50][50], int i, int j)
+{
+	int sum, rows, columns;
+	for(rows = 0; rows < i; rows++)
+  	{
+  		sum = 0;
+  		for(columns = 0; columns < j; columns++)
+  		{
+  			sum = sum + sumRCArray[rows][columns];
+		}
+   		cout << "\nThe Sum of Items in " << rows + 1<< " Row of a Matrix = " << sum ;
+  	}
+}
+
+void addMatrixColumns(int sumRCArray[50][50], int i, int j)
+{
+	int sum, rows, columns;
+	for(rows = 0; rows < i; rows++)
+  	{
+  		sum = 0;
+  		for(columns = 0; columns < j; columns++)
+  		{
+  			sum = sum + sumRCArray[columns][rows];
+		}
+   		cout << "\nThe Sum of Items in Column of a Matrix = " << sum ;
+  	} 
+}
+
+int main()
+{
+	int i, j, rows, columns, sumRCArray[50][50];
+	
+	cout << "\nPlease Enter the Matrix rows and Columns =  ";
+	cin >> i >> j;
+	
+	cout << "\nPlease Enter the Matrix Items =  ";
+	for(rows = 0; rows < i; rows++)	{
+		for(columns = 0; columns < i; columns++) {
+			cin >> sumRCArray[rows][columns];
+		}		
+	}
+	
+	addMatrixRows(sumRCArray, i, j); 
+	addMatrixColumns(sumRCArray, i, j); 	
+
+ 	return 0;
+}
+Please Enter the Matrix rows and Columns =  2 2
+
+Please Enter the Matrix Items =  19 22 33 44
+
+The Sum of Items in 1 Row of a Matrix = 41
+The Sum of Items in 2 Row of a Matrix = 77
+The Sum of Items in Column of a Matrix = 52
+The Sum of Items in Column of a Matrix = 66
