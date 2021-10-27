@@ -1,0 +1,234 @@
+    #Java Array
+How to declare Java array, creating java array, initialization, and accessing java array elements?. An Array in Java is a container object that holds a collection of similar types of elements (type may be integer, float, long, etc.). It means we cannot store multiple data type values.
+
+In our previous articles, we saw the variable declaration, initialization and, they are pretty good for initializing a few variables. What if we want to store 100 employee salaries? Is it worth to create 100 variables and assign those values? What happens if it is 150 employees? In order to handle this type of situation, Java Programming language introduced the concept of arrays.
+
+
+Java Array Introduction
+For example, an integer array in Java will store all the integer elements. If you try to insert a float or char value, then it will throw an error.
+
+The length of a Java array decided when we are creating an array. Once it created, the length is fixed. We have 3 types of arrays in Java Programming
+
+One Dimensional Array
+Two Dimensional Array
+Multi-Dimensional Array
+Three Dimensional Array
+Four Dimensional Array etc
+Java array declaration or Syntax
+The following code snippet will show you the most basic way of Java array declaration:
+
+
+Data_Type[] Array_Name;
+Data_type: It will decide the type of elements array will accept. For example, If we want to store integer values, the Data Type will be declared as an int, to store Float values the Data Type is float
+Array_Name: This is the name you want to give it to an array. For example, students, age, marks, emp
+Similarly, you can declare the remaining type of arrays in Java as follows:
+
+int [] anIntegerArray; // declaring an array of Integers
+byte[] anByteArray; // Bytes
+short[] anShortArray; 
+long[] anLongArray; 
+float[] anFloatArray; 
+double[] anDoubleArray; 
+boolean[] anBooleanArray;
+char[] anCharArray; 
+String[] anStringArray;
+Create a Java Array
+In order to create an array in Java, we have to use the New operator
+
+Data_Type[] Array_Name = new Array_Name[Array_Size];
+Array_Size: Number of elements an array can hold or store. For example, Array_Size =10, then the array will hold 10 values.
+
+
+If you already initialized an array in java then
+
+int [] anIntegerArray; // Java array declaration
+
+// Crating an Java Array
+anIntegerArray = new int[10];
+For Example, int[] Student_Marks = new int[10];
+
+We used int as the data type to declare an array. So, the above array will accept only integers. If we try to add float values, then it will throw an error.
+Student_Age is the array name
+The size of an Array is ten. It means Student_Marks array will only accept ten integer values.
+If we try to store more than ten, then it throws an error.
+We can store less than 10. For Example, If we store three integer values, then the remaining two values will be initialized to the default value (Which is 0).
+Java Array Initialization
+There are multiple ways to initialize the array in Java Programming language
+
+First Approach
+Declaring and Creating an Array in Java Programming 
+
+int[] Student_Marks = new int[3];
+
+Initializing Array elements in more traditional way
+
+
+Student_Marks[0] = 15; // Initializing First array elements at position 0
+ Student_Marks[1] = 45; // Initializing First array elements at position 1
+Student_Marks[2] = 65; // First array elements at position 2
+Second Approach to create an Array in Java
+In this approach, We initialize the array at the declaration time only
+
+int[] anIntegerArray = {15, 25, 35, 45, 55}
+
+Here, We did not mention the array size. However, the Javac is intelligent enough to determine the array size by checking the number of elements.
+
+Third Approach
+Although this approach works without any error, this is not the preferred way to initialize a java array
+
+int Employees[ ] = {1, 2, 3, 4, 5}
+
+Fourth Approach
+The above 3 methods are good to store a small number of items into an array. What if we want to store 50, 100, or more values. It will be a torture to add all of them using any of the approaches mentioned above. To resolve this, we can use the loop concept to store data into a java array here:
+
+
+int i, Employees[100];
+
+for (i =0; i < 100 ; i++)
+ {
+   Employees[i] = i * 2;
+ }
+TIP: In order to store the elements in an array, We can use For loop, While Loop and Do While Loop
+
+Fifth Approach of creating an array in Java
+int[] anIntegerArray = new int[5];
+anIntegerArray[0] = 10;
+anIntegerArray[1] = 20;
+anIntegerArray[2] = 30;
+
+Here we declared an anIntegerArray array of size 5, but we only assigned three values to it. In this condition, the remaining values assigned to default values (0 in this case).
+
+The above array will be:
+
+//It means
+anIntegerArray[0] = 10
+anIntegerArray[1] = 20
+anIntegerArray[2] = 30
+anIntegerArray[3] = 0
+anIntegerArray[4] = 0
+Accessing Java Array Elements
+We use the index position to access the items of an Array in Java. Using an index, we can access or alter/change array item. Index value starts at 0 and ends at n-1, where n is the size or length of an array.
+
+For example, if an array stores ten elements, the index starts at 0 and ends at 9. To access or modify the first value, use Array_Name[0] and to access or alter 10th value, use Array_Name[10]. Let us see the example for better knowledge of accessing Java array elements:
+
+
+// Accessing Java Array elements example 
+
+package ArrayDefinitions;
+
+public class ArrayTest {
+
+	public static void main(String[] args) {
+		int[] anIntegerArray = {15, 25, 35, 45, 55, 65};
+
+		System.out.println(anIntegerArray[0]);
+		System.out.println(anIntegerArray[1]);
+		System.out.println(anIntegerArray[2]);
+		System.out.println(anIntegerArray[3]);
+		System.out.println(anIntegerArray[4]);
+		System.out.println(anIntegerArray[5]);
+	}
+}
+15
+25
+35
+45
+55
+65
+Java Array example
+In this Java array program, We will declare an integer array of size ten. Then we will sum those ten array values and displays the output.
+
+// Java Array example: Sum of the elements inside an Array 
+
+package ArrayDefinitions;
+
+public class JavaArray {
+
+	public static void main(String[] args) {
+		int i, Sum =0;
+		int [] anIntegerArray = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+		
+		for(i = 0; i < anIntegerArray.length; i++) {
+			Sum = Sum + anIntegerArray[i];
+			
+			System.out.format("Addition of %d to Sum = %d \n", anIntegerArray[i], Sum);
+		}
+		System.out.format("Sum of the elemts in anIntegerArray = %d \n", Sum);
+	}
+}
+Java Array example 1
+In this Java array example Program, We declared 1 One Dimensional Arrays anIntegerArray[] with 10 elements and also declared i to iterate the Array elements,
+
+int [] anIntegerArray = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+Below For loop iterate every cell in the anIntegerArray[4] array. The condition inside the for loops (i < anIntegerArray.length) will ensure the Jcompiler not exceed the array limit.
+
+
+Sum = Sum + anIntegerArray[i]; statement is used to add each and individual array element present in the anIntegerArray to Sum variable.
+System.out.format statement displays the Sum value after every iteration.
+anIntegerArray.length finds the length of an array.
+for(i = 0; i < anIntegerArray.length; i++) {
+	Sum = Sum + anIntegerArray[i];
+        
+        System.out.format("Addition of %d to Sum = %d \n", anIntegerArray[i], Sum);
+Java Array First Iteration: The value of i will be 0, and the condition (i < 10) is True. So, it will start executing the statements inside the loop.
+
+Sum = Sum + anIntegerArray[i]
+
+=> Sum + anIntegerArray[0]
+
+
+Sum = 0 + 10 = 10
+
+The value of i will be incremented by 1
+
+Second Iteration: The value of i is 1, and the condition (1 < 10) is True.
+
+Sum = Sum + anIntegerArray[1]
+Sum = 10 + 20 = 30
+
+Third Iteration: After the increment, the value of i is 2, and the condition (2 < 10) is True.
+
+Sum += anIntegerArray[2]
+=> 30 + 30 = 60
+
+
+Fourth Iteration: The value of i is 3, and the condition (3 < 5) is True.
+
+Sum = Sum + anIntegerArray[3]
+Sum = 60 + 40 = 100
+
+Fifth Iteration: The value of i is 4, and the condition (4 < 10) is True.
+
+
+Sum = Sum +anIntegerArray[4]
+=> 100 + 50 = 150
+
+Sixth Iteration: The value of i is 5, and the condition (5 < 10) is True.
+
+Sum +=  anIntegerArray[5]
+Sum = 150 + 60 = 210
+
+
+Seventh Iteration: After increment, i = 6, and the condition (6 < 10) is True.
+
+Sum = Sum + anIntegerArray[6] => 210 + 70 = 280
+
+Eighth Iteration: The value of i is 7, and the condition (7 < 10) is True.
+
+
+Sum = Sum + anIntegerArray[7] => 280 + 80 = 360
+
+9th Iteration: i is 8, and the condition (8 < 10) is True.
+
+Sum = Sum + anIntegerArray[8] => 360 + 90 = 450
+
+10th Iteration: i is 9 and the condition (9 < 10) is True.
+
+Sum = Sum + anIntegerArray[9]
+Sum = 450 + 100 = 550
+
+11th Iteration: The value of i is 10, and the condition (10 < 10) is False. So, it will exit from the for loop.
+
+Lastly, we used System.out.format statement to display the Sum
+
+System.out.format("Sum of the elements in anIntegerArray = %d \n", Sum);
