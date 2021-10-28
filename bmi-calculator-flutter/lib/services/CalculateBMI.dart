@@ -1,5 +1,6 @@
 import 'dart:math';
-import 'package:bmi_calculator/utils/constants.dart';
+import 'package:bmi_calculator/utils/colors.dart';
+import 'package:bmi_calculator/utils/strings.dart';
 import 'package:flutter/material.dart';
 
 class Calculator {
@@ -24,11 +25,11 @@ class Calculator {
 
   String getMessage() {
     if (_bmi >= 25) {
-      return 'You\'re having a higher body weight than normal. Try to exercise more.';
+      return HIGHER_BODY_WEIGHT;
     } else if (_bmi >= 18.5) {
-      return 'You\'re having a normal body weight. Good Job!';
+      return NORMAL_BODY_WEIGHT;
     } else {
-      return 'You have a lower body weight than normal. You can eat a bit more!';
+      return LOWER_BODY_WEIGHT;
     }
   }
 

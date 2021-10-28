@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../utils/constants.dart';
+import '../utils/colors.dart';
 
 class BottomButton extends StatelessWidget {
   final Function onTap;

@@ -1,6 +1,7 @@
 import 'package:bmi_calculator/providers/bmi_provider.dart';
 import 'package:flutter/material.dart';
-import '../utils/constants.dart';
+import '../utils/colors.dart';
+import '../utils/text_styles.dart';
 import 'package:bmi_calculator/widgets/Reusable_Container.dart';
 import '../widgets/BottomButton.dart';
 import 'package:provider/provider.dart';
