@@ -1,22 +1,16 @@
+import 'package:bmi_calculator/providers/bmi_provider.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'package:bmi_calculator/Reusable_Container.dart';
 import 'BottomButton.dart';
+import 'package:provider/provider.dart';
 
 class ResultsPage extends StatelessWidget {
-  final String bmi;
-  final String title;
-  final String advice;
-  final Color colr;
-
-  ResultsPage(
-      {@required this.bmi,
-      @required this.title,
-      @required this.advice,
-      @required this.colr});
+  BMIProvider bmiProvider;
 
   @override
   Widget build(BuildContext context) {
+    bmiProvider = context.watch<BMIProvider>();
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -53,9 +47,9 @@ class ResultsPage extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          title,
+                          bmiProvider.title.toString(),
                           style: TextStyle(
-                            color: colr,
+                            color: bmiProvider.color,
                             fontSize: 25,
                             fontWeight: FontWeight.bold,
                           ),
@@ -64,7 +58,7 @@ class ResultsPage extends StatelessWidget {
                           height: 5,
                         ),
                         Text(
-                          bmi,
+                          bmiProvider.bmi.toString(),
                           style: kBMIfont,
                         ),
                       ],
@@ -94,7 +88,7 @@ class ResultsPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        advice,
+                        bmiProvider.advice.toString(),
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 26,

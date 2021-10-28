@@ -7,7 +7,7 @@ class BMIProvider extends ChangeNotifier {
   Gender gender;
   int height = 180;
   int weight = 50;
-  int bmi;
+  String bmi;
   String title;
   String message;
   Color color;
@@ -15,7 +15,7 @@ class BMIProvider extends ChangeNotifier {
 
   calculateBMI() {
     Calculator calc = Calculator(height, weight);
-    bmi = calculateBMI();
+    bmi = calc.calculateBMI();
     title = calc.getResult();
     advice = calc.getMessage();
     color = calc.getColor();
