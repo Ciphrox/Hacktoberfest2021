@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 
 class BMIProvider extends ChangeNotifier {
   int age = 10;
-  Gender gender;
+  Gender gender = Gender.Female;
   int height = 180;
   int weight = 50;
   String bmi;
