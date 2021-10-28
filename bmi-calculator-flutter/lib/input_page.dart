@@ -1,3 +1,4 @@
+import 'package:bmi_calculator/providers/bmi_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -7,6 +8,7 @@ import 'constants.dart';
 import 'RoundButtonIcon.dart';
 import 'results_page.dart';
 import 'BottomButton.dart';
+import 'package:provider/provider.dart';
 import 'package:bmi_calculator/CalculateBMI.dart';
 
 enum Gender { Male, Female }
@@ -17,6 +19,8 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
+  BMIProvider bmiProvider;
+
   Gender selectedGender;
   int height = 180;
   int weight = 50;
@@ -24,6 +28,7 @@ class _InputPageState extends State<InputPage> {
 
   @override
   Widget build(BuildContext context) {
+    bmiProvider = context.watch<BMIProvider>();
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -44,11 +49,9 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableContainer(
                     onPress: () {
-                      setState(() {
-                        selectedGender = Gender.Male;
-                      });
+                      bmiProvider.updateGender(Gender.Male);
                     },
-                    colr: (selectedGender == Gender.Male)
+                    colr: (bmiProvider.gender == Gender.Male)
                         ? kActiveColor
                         : kInactiveColor,
                     cardChild: IconContent(
@@ -60,11 +63,9 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReusableContainer(
                     onPress: () {
-                      setState(() {
-                        selectedGender = Gender.Female;
-                      });
+                      bmiProvider.updateGender(Gender.Female);
                     },
-                    colr: (selectedGender == Gender.Female)
+                    colr: (bmiProvider.gender == Gender.Female)
                         ? kActiveColor
                         : kInactiveColor,
                     cardChild: IconContent(
@@ -237,22 +238,23 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           BottomButton(
-              text: 'CALCULATE',
-              onTap: () {
-                Calculator calc = Calculator(height, weight);
+            text: 'CALCULATE',
+            onTap: () {
+              Calculator calc = Calculator(height, weight);
 
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ResultsPage(
-                      bmi: calc.calculateBMI(),
-                      title: calc.getResult(),
-                      advice: calc.getMessage(),
-                      colr: calc.getColor(),
-                    ),
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultsPage(
+                    bmi: calc.calculateBMI(),
+                    title: calc.getResult(),
+                    advice: calc.getMessage(),
+                    colr: calc.getColor(),
                   ),
-                );
-              }),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );

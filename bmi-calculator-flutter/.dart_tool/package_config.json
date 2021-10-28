@@ -80,8 +80,20 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "nested",
+      "rootUri": "file:///C:/Users/JAZ/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///C:/Users/JAZ/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/path-1.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///C:/Users/JAZ/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/provider-6.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -146,7 +158,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2021-10-28T11:40:11.248766Z",
+  "generated": "2021-10-28T11:46:04.940856Z",
   "generator": "pub",
   "generatorVersion": "2.13.4"
 }
