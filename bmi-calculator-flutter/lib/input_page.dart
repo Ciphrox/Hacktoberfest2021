@@ -98,7 +98,7 @@ class _InputPageState extends State<InputPage> {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          height.toString(),
+                          bmiProvider.height.toString(),
                           style: kNumberLabel,
                         ),
                         SizedBox(
@@ -121,14 +121,12 @@ class _InputPageState extends State<InputPage> {
                             RoundSliderOverlayShape(overlayRadius: 20),
                       ),
                       child: Slider(
-                        value: height.toDouble(),
+                        value: bmiProvider.height.toDouble(),
                         min: 120,
                         max: 240,
                         activeColor: kBottomContainerColor,
                         onChanged: (double newValue) {
-                          setState(() {
-                            height = newValue.toInt();
-                          });
+                          bmiProvider.updateHeight(newValue.toInt());
                         },
                       ),
                     ),
@@ -154,7 +152,7 @@ class _InputPageState extends State<InputPage> {
                           height: 5,
                         ),
                         Text(
-                          weight.toString(),
+                          bmiProvider.weight.toString(),
                           style: kNumberLabel,
                         ),
                         Row(
@@ -163,9 +161,8 @@ class _InputPageState extends State<InputPage> {
                             RoundIcon(
                               iconData: Icons.remove,
                               onPress: () {
-                                setState(() {
-                                  weight -= 1;
-                                });
+                                bmiProvider
+                                    .updateWeight(bmiProvider.weight -= 1);
                               },
                               tag: "button1",
                             ),
@@ -175,9 +172,8 @@ class _InputPageState extends State<InputPage> {
                             RoundIcon(
                               iconData: Icons.add,
                               onPress: () {
-                                setState(() {
-                                  weight += 1;
-                                });
+                                bmiProvider
+                                    .updateWeight(bmiProvider.weight += 1);
                               },
                               tag: "button2",
                             ),
@@ -201,7 +197,7 @@ class _InputPageState extends State<InputPage> {
                           height: 5,
                         ),
                         Text(
-                          age.toString(),
+                          bmiProvider.age.toString(),
                           style: kNumberLabel,
                         ),
                         Row(
@@ -210,9 +206,7 @@ class _InputPageState extends State<InputPage> {
                             RoundIcon(
                               iconData: Icons.remove,
                               onPress: () {
-                                setState(() {
-                                  age -= 1;
-                                });
+                                bmiProvider.updateAge(bmiProvider.age -= 1);
                               },
                               tag: "button3",
                             ),
@@ -222,9 +216,7 @@ class _InputPageState extends State<InputPage> {
                             RoundIcon(
                               iconData: Icons.add,
                               onPress: () {
-                                setState(() {
-                                  age += 1;
-                                });
+                                bmiProvider.updateAge(bmiProvider.age += 1);
                               },
                               tag: "button4",
                             ),

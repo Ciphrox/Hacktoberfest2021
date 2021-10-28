@@ -2,19 +2,32 @@ import 'package:bmi_calculator/input_page.dart';
 import 'package:flutter/cupertino.dart';
 
 class BMIProvider extends ChangeNotifier {
-  int _age;
-  Gender _gender;
+  int age = 10;
+  Gender gender;
+  int height = 180;
+  int weight = 50;
 
-  get age => _age;
-  get gender => _gender;
+  calculateBMI() {
+    
+  }
 
   updateAge(int val) {
-    _age = val;
+    age = val;
     notifyListeners();
   }
 
   updateGender(Gender gen) {
-    _gender = gen;
+    gender = gen;
+    notifyListeners();
+  }
+
+  updateHeight(int val) {
+    height = val;
+    notifyListeners();
+  }
+
+  updateWeight(int val) {
+    weight = val;
     notifyListeners();
   }
 }
