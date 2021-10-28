@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'package:bmi_calculator/constants.dart';
+import 'package:bmi_calculator/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class Calculator {

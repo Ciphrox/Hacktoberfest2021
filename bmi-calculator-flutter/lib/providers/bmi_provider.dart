@@ -1,5 +1,5 @@
-import 'package:bmi_calculator/CalculateBMI.dart';
-import 'package:bmi_calculator/input_page.dart';
+import 'package:bmi_calculator/services/CalculateBMI.dart';
+import 'package:bmi_calculator/screens/input_page.dart';
 import 'package:flutter/cupertino.dart';
 
 class BMIProvider extends ChangeNotifier {
