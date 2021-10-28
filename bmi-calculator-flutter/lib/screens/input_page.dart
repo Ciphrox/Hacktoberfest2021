@@ -32,12 +32,11 @@ class _InputPageState extends State<InputPage> {
     bmiProvider = context.watch<BMIProvider>();
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text(
-            'BMI Calculator',
-            style: TextStyle(
-              fontSize: 25,
-            ),
+        centerTitle: true,
+        title: Text(
+          'BMI Calculator',
+          style: TextStyle(
+            fontSize: 25,
           ),
         ),
       ),

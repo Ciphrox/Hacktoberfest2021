@@ -14,8 +14,9 @@ class ResultsPage extends StatelessWidget {
     bmiProvider = context.watch<BMIProvider>();
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text(
-            '          BMI Calculator',
+            'BMI Calculator',
             style: TextStyle(
               fontSize: 25,
             ),
